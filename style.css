@@ -9,20 +9,42 @@ coloque nas sessões indicadas*/
    --cor-de-link: #000;
 }
 
+.all {
+    height: auto;
+    width: 1024px;
+    align-items: center; 
+    text-align: left;
+}
+
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: var(--cor-de-fundo);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
 }
+
+h1, h2, h3, h4 {
+   
+}
+
 ol, ul,li {
+    display: flex;
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+.imagem {
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    width: 20px;
+    height: 20px;
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -40,7 +62,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
+section.menu {
 
 }
 
@@ -80,11 +102,106 @@ section.formcontato{
 
 }
 
-/*footeer*/
+/*footer*/
 
 section.footer{
    
 }
+
+header {
+    display: flex;
+    unicode-bidi: isolate;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 20 20 0 0;
+    top: 0;
+
+}
+
+.nav {
+    display: flex;
+}
+
+.menu__conteiner {
+    justify-content: space-around;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__list__item {
+    padding: 10px;
+}
+
+/*title*/
+.title {
+    display: flex;
+}
+
+.title__div {
+    justify-content: center;
+}
+
+.title__profile {
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+}
+
+.title__bio {
+}
+
+.title__network {
+    padding: 5px;
+}
+
+.title__network__item {
+    padding: 15px;
+
+}
+
+/*Skills*/
+.skills {
+
+}
+
+.skills__line {
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+.skills__box {
+    align-items: center;
+}
+
+
+.skills__names {
+}
+
+/*Hobbies*/
+.hobbies__line {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
@@ -92,19 +209,9 @@ utilize como referência os breakpoints @media abaixo*/
 /*Tablet*/
 @media (min-width: 768px) {
 
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
 }
+
+
 
 /*Mobile*/
 @media (min-width: 425px) {
